@@ -10,6 +10,10 @@ if __name__ =="__main__":
     bank_acc2 =BankAccount(345,"KanchanaMopuru",500037787,15000)
 
     #calling methods
-    bank_acc1.show_balance()
-    bank_acc2.show_balance()
+    #bank_acc1.show_balance()
+    #bank_acc2.show_balance()
+    bank_acc1.deposit()
+    bank_acc2.deposit()
+
+
 

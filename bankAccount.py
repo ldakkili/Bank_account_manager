@@ -11,6 +11,11 @@ class BankAccount:
         self.balance = balance
 
     #methods
+    def deposit(self):
+        print("The existing balance: ",self.balance)
+        self.balance +=1000
+        print("The new available balance:",self.balance)
+
 
     def show_balance(self):
         print("The account number is :",self.account_number ,"and the available balance is :",self.balance)
