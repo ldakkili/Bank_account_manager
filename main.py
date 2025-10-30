@@ -1,15 +1,15 @@
-# This is a sample Python script.
+#Bank Account Manager --> is a project used to handle
+#Create bank account class
+#Create transaction class
+#Handle all the data using database scheme.
+from bankAccount import BankAccount
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+if __name__ =="__main__":
+    # creating objects
+    bank_acc1 = BankAccount(456,"LikithaDakkili",500034564,10000)
+    bank_acc2 =BankAccount(345,"KanchanaMopuru",500037787,15000)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+    #calling methods
+    bank_acc1.show_balance()
+    bank_acc2.show_balance()
 
