@@ -1,5 +1,5 @@
 # To implement bank account, we need class, constructors and methods
-# method : deposit(),withdraw(),zelle(),show_balance(),show_transaction(),
+# method : deposit(),withdraw(),transfer(),show_balance(),show_transaction(),
 
 class BankAccount:
     #constructor:intialize the attributes
@@ -12,10 +12,22 @@ class BankAccount:
 
     #methods
     def deposit(self):
-        print("The existing balance: ",self.balance)
-        self.balance +=1000
+        print("Customer name:",self.name ,"Account_id:",self.account_id,"Account number:",self.account_number,"Available balance:",self.balance)
+        #Get the user input how much he want to deposit
+        deposit_amt = int(input("Enter the amount you want to deposit: "))
+        self.balance +=deposit_amt
         print("The new available balance:",self.balance)
 
+    #def withdraw(self):
+
+    #def transfer(self):
+
+    #def show_transaction(self):
 
     def show_balance(self):
-        print("The account number is :",self.account_number ,"and the available balance is :",self.balance)
+        #get account_id and validate and print the balance
+        acct_id=int(input("Please enter your account id to see your account balance: "))
+        if acct_id == self.account_id:
+            print("The account number is :",self.account_number ,"and the available balance is :",self.balance)
+        else:
+            print("Sorry the provided account id is invalid.Please Try again!")
